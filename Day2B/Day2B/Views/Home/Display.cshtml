@@ -1,0 +1,42 @@
+﻿@model Day2B.ViewModel.StudSubj
+
+@{
+    ViewBag.Title = "Display";
+}
+
+<h2>Display</h2>
+
+<div>
+    <h4>StudSubj</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sub_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sub_id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sub_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sub_name)
+        </dd>
+
+    </dl>
+</div>
+@*<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.s_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>*@
